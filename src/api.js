@@ -1,5 +1,5 @@
 // src/api.js — NovaCraft API client
-const BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+const BASE = import.meta.env.VITE_API_URL || 'http://localhost:2121/api'
 
 function getToken() { return localStorage.getItem('nc_token') }
 function setToken(t) { localStorage.setItem('nc_token', t) }

@@ -86,8 +86,8 @@ export default function AdminDashboardPage() {
             </div>
           ) : pending.map(req => (
             <div key={req.id} className="card" style={{marginBottom:16, display:'flex', gap:20, flexWrap:'wrap', alignItems:'flex-start'}}>
-              <a href={`http://localhost:5000/api/payment/screenshot/${req.screenshotPath}`} target="_blank" rel="noreferrer">
-                <img src={`http://localhost:5000/api/payment/screenshot/${req.screenshotPath}`} alt="screenshot" style={{width:100, height:80, objectFit:'cover', borderRadius:8, border:'1px solid #3D3F5C', cursor:'pointer'}} />
+              <a href={`http://localhost:2121/api/payment/screenshot/${req.screenshotPath}`} target="_blank" rel="noreferrer">
+                <img src={`http://localhost:2121/api/payment/screenshot/${req.screenshotPath}`} alt="screenshot" style={{width:100, height:80, objectFit:'cover', borderRadius:8, border:'1px solid #3D3F5C', cursor:'pointer'}} />
               </a>
               <div style={{flex:1}}>
                 <div style={{fontWeight:700, fontSize:16, marginBottom:4}}>{req.user.name}</div>
